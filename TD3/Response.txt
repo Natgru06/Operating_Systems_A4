@@ -1,0 +1,10 @@
+ps | grep $(basename $SHELL) | awk '{print $1}' | xargs kill -9
+
+ps aux| grep $(basename $SHELL) | awk '{print $2}' | xargs kill -9
+
+ps : retrieve all program on cpu
+recherche tous les programmes par bash et kill tous les terminaux
+pour executer la commande on utilise sh 
+on met plusieurs terminaux avec sh et on kill tous les process sh 
+
+timeout 10 sleep 5
